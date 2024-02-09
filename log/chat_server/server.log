@@ -1,0 +1,7 @@
+2024-02-09 13:40:03,954 DEBUG Using proactor: IocpProactor
+2024-02-09 13:40:03,958 INFO Le serveur tourne sur ('127.0.0.1', 9999)
+2024-02-09 13:40:14,986 INFO New connection from 127.0.0.1:23888 : leo
+2024-02-09 13:40:17,306 INFO Message received from 127.0.0.1:23888 : hey
+2024-02-09 13:40:28,183 INFO New connection from 127.0.0.1:23896 : enzo
+2024-02-09 13:40:29,725 INFO Message received from 127.0.0.1:23896 : yop
+2024-02-09 13:40:33,400 INFO Message received from 127.0.0.1:23888 : hello
