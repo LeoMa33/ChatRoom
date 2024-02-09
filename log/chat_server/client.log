@@ -1,8 +1,10 @@
-2024-02-09 13:40:26,580 DEBUG Using proactor: IocpProactor
-2024-02-09 13:40:28,182 INFO CONFIGURATION | PSEUDO : enzo
-2024-02-09 13:40:28,183 INFO CONNECTION | HOST : 127.0.0.1 | PORT : 9999
-2024-02-09 13:40:29,724 INFO MSG | FROM : Vous | CONTENT : yop
-2024-02-09 13:40:33,400 INFO MSG | FROM : leo | CONTENT : hello
- room
-2024-02-09 13:40:29,725 INFO MSG | FROM : enzo | CONTENT : yop
-2024-02-09 13:40:33,399 INFO MSG | FROM : Vous | CONTENT : hello
+2024-02-09 13:56:55,447 DEBUG Using proactor: IocpProactor
+2024-02-09 14:03:03,574 INFO CONFIGURATION | PSEUDO : Utilisateur3
+2024-02-09 14:03:03,575 INFO CONNECTION | HOST : 127.0.0.1 | PORT : 9999
+2024-02-09 14:03:19,017 INFO MSG | FROM : Vous | CONTENT : Bonjour à tous !
+2024-02-09 14:03:42,092 INFO MSG | FROM : Utilisateur1 | CONTENT : Hey Utilisateur3
+2024-02-09 14:03:53,644 INFO MSG | FROM : Utilisateur2 | CONTENT : Bonjour à vous
+2024-02-09 14:04:17,027 INFO MSG | FROM : Utilisateur2 | CONTENT : Oh je voulais savoir Utilisateur1, à quand des retours sur Marcus ?
+2024-02-09 14:04:27,181 INFO MSG | FROM : Utilisateur1 | CONTENT : Bientôt ! En fin de semaine prochaine
+2024-02-09 14:04:41,018 INFO MSG | FROM : Vous | CONTENT : Trop bien, j'a2024-02-09 14:04:41,019 INFO MSG | FROM : Utilisateur3 | CONTENT : Trop bien, j'ai trop hâte !
+4:41,019 INFO MSG | FROM : Utilisateur3 | CONTENT : Trop bien, j'ai trop hâte !

@@ -1,7 +1,71 @@
-2024-02-09 13:40:03,954 DEBUG Using proactor: IocpProactor
-2024-02-09 13:40:03,958 INFO Le serveur tourne sur ('127.0.0.1', 9999)
-2024-02-09 13:40:14,986 INFO New connection from 127.0.0.1:23888 : leo
-2024-02-09 13:40:17,306 INFO Message received from 127.0.0.1:23888 : hey
-2024-02-09 13:40:28,183 INFO New connection from 127.0.0.1:23896 : enzo
-2024-02-09 13:40:29,725 INFO Message received from 127.0.0.1:23896 : yop
-2024-02-09 13:40:33,400 INFO Message received from 127.0.0.1:23888 : hello
+2024-02-09 13:53:25,354 DEBUG Using proactor: IocpProactor
+2024-02-09 13:53:25,355 INFO Le serveur tourne sur ('127.0.0.1', 9999)
+2024-02-09 14:02:51,218 INFO New connection from 127.0.0.1:26679 : Utilisateur1
+2024-02-09 14:02:58,065 INFO New connection from 127.0.0.1:26682 : Utilisateur2
+2024-02-09 14:03:03,575 INFO New connection from 127.0.0.1:26684 : Utilisateur3
+2024-02-09 14:03:19,018 INFO Message received from 127.0.0.1:26684 : Bonjour à tous !
+2024-02-09 14:03:42,091 INFO Message received from 127.0.0.1:26679 : Hey Utilisateur3
+2024-02-09 14:03:53,644 INFO Message received from 127.0.0.1:26682 : Bonjour à vous
+2024-02-09 14:04:17,027 INFO Message received from 127.0.0.1:26682 : Oh je voulais savoir Utilisateur1, à quand des retours sur Marcus ?
+2024-02-09 14:04:27,181 INFO Message received from 127.0.0.1:26679 : Bientôt ! En fin de semaine prochaine
+2024-02-09 14:04:41,018 INFO Message received from 127.0.0.1:26684 : Trop bien, j'ai trop hâte !
+2024-02-09 14:26:45,900 ERROR Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<handle_client_msg() done, defined at C:\Users\macel\OneDrive\Bureau\ReposGit\ChatRoom\chat_server.py:36> exception=ConnectionResetError(22, 'Le nom réseau spécifié n’est plus disponible', None, 64, None)>
+Traceback (most recent call last):
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 461, in finish_socket_func
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Le nom réseau spécifié n’est plus disponible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\macel\OneDrive\Bureau\ReposGit\ChatRoom\chat_server.py", line 39, in handle_client_msg
+    data = await Encoding.decodeM(reader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macel\OneDrive\Bureau\ReposGit\ChatRoom\Encoding.py", line 53, in decodeM
+    header = await reader.read(1)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 695, in read
+    await self._wait_for_data('read')
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 527, in _wait_for_data
+    await self._waiter
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 465, in finish_socket_func
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Le nom réseau spécifié n’est plus disponible
+2024-02-09 14:26:46,758 ERROR Task exception was never retrieved
+future: <Task finished name='Task-5' coro=<handle_client_msg() done, defined at C:\Users\macel\OneDrive\Bureau\ReposGit\ChatRoom\chat_server.py:36> exception=ConnectionResetError(22, 'Le nom réseau spécifié n’est plus disponible', None, 64, None)>
+Traceback (most recent call last):
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 461, in finish_socket_func
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Le nom réseau spécifié n’est plus disponible
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\macel\OneDrive\Bureau\ReposGit\ChatRoom\chat_server.py", line 39, in handle_client_msg
+    data = await Encoding.decodeM(reader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macel\OneDrive\Bureau\ReposGit\ChatRoom\Encoding.py", line 53, in decodeM
+    header = await reader.read(1)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 695, in read
+    await self._wait_for_data('read')
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py", line 527, in _wait_for_data
+    await self._waiter
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\macel\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 465, in finish_socket_func
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Le nom réseau spécifié n’est plus disponible
